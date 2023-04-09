@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css2/bootstrap.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+    
+    var sname = prompt("Please Enter Your Name");
+    var sid = prompt("Please Enter Your ID");
+    var html = prompt("Please Enter Your HTML Marks");
+    var java = prompt("Please Enter Your Javascript Marks");
+    var seo = prompt("Please Enter Your ID SEO Marks");
+    var bootstrap = prompt("Please Enter Your BOOTSTRAP Marks");
+    var css = prompt("Please Enter Your CSS Marks");
+    var uiux = prompt("please Enter Your UIUX Marks");
+    var stotal = parseInt(html) + parseInt(java) + parseInt(seo) + parseInt(bootstrap) +  parseInt(css) + parseInt(uiux);
+    var percentage = stotal / 550 * 100;
+
+
+    document.write("Student Name : " + sname + "<br>");
+    document.write("Student ID : " + sid +"<br>");
+    document.write(" HTML MARKS : " + html +"<br>");
+    document.write(" JAVASCRIPT MARKS : " + java +"<br>");
+    document.write(" SEO MARKS : " + seo +"<br>");
+    document.write(" BOOTSTRAP MARKS : " + bootstrap +"<br>");
+    document.write(" CSS MARKS : " + css +"<br>");
+    document.write(" UIUX : " + uiux +"<br>");
+    document.write(" Total : " + stotal +"<br>");
+    document.write(" Your Percentage is : " + percentage + "%" +"<br>");
+ 
+
+    if(percentage >= 80 ){
+        document.write("Your Grade is :  'A-1'" + "<br>")
+    } else if(percentage >=70 ){
+        document.write("Your Grade is :  'A'" + "<br>")
+    }else if(percentage >=60 ){
+        document.write("Your Grade is :  'B'" + "<br>")
+    }else if(percentage >=50 ){
+        document.write("Your Grade is :  'C'" + "<br>")
+    }else{
+        document.write("You Are :  'Fail' " + "<br>")
+    }
+
+
+    if(percentage >= 80 ){
+        document.write("Your Are  :  'BRILLIANT'" + "<br>")
+    } else if(percentage >=70 ){
+        document.write("Your Are :  'EXCELLENT'" + "<br>")
+    }else if(percentage >=60 ){
+        document.write("Your Are :  'GOOD'" + "<br>")
+    }else if(percentage >=50 ){
+        document.write("Your Are :  'NOT BAD'" + "<br>")
+    }else{
+        document.write(" YOU HAVE TO WORKHARD " + "<br>")
+    }
+
+
+</script>
+
+    <script src="js2/bootstrap.bundle.js"></script>
+</body>
+</html>
